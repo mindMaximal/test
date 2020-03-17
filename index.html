@@ -138,45 +138,50 @@
 	</main>
 
 	<script>
-		
-		function randomInteger(min, max) {
 
-			value = Math.floor(min + Math.random() * (max - min + 1));
-			
-			var now = document.body.getAttribute('data-hl') || 0;
-			
-			if (value == now) {			
-				value = randomInteger(min, max, now);
+		function highlightText(elem) {
+
+			function randomInteger(min, max) {
+
+				value = Math.floor(min + Math.random() * (max - min + 1));
+
+				var now = document.body.getAttribute('data-hl') || 0;
+
+				if (value == now) {			
+					value = randomInteger(min, max, now);
+				}
+
+				return value;
 			}
 
-			return value;
-		}
+			function handlerMouseup(e) {
 
-		function handlerMouseup(e) {
-		
-			if (!document.getSelection)
-				return false;
+				if (!document.getSelection)
+					return false;
 
-			var str = document.getSelection();
+				var str = document.getSelection();
 
-			if(str == "")
-				return false;
-			
-			var numbers = 4;
+				if(str == "")
+					return false;
 
-			var body = document.body;
-			var num = randomInteger(1, numbers);			
-						
-			body.setAttribute('data-hl', num);
+				var numbers = 4;
 
-			return true;
-		}
+				var body = document.body;
+				var num = randomInteger(1, numbers);			
+							
+				body.setAttribute('data-hl', num);
 
-		var p = document.querySelectorAll('p');
+				return true;
+			}
 
-		p.forEach((element) => {
+			var p = document.querySelectorAll(elem);
+
+			p.forEach((element) => {
 			element.onmouseup  = handlerMouseup;
-		})
+			})
+		}
+		
+		highlightText('p');
 
 	</script>
 
