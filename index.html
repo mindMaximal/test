@@ -11,62 +11,174 @@
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
-	<!-- Template Basic Images Start -->
 	<meta property="og:image" content="path/to/image.jpg">
 	<link rel="icon" href="img/favicon/favicon.ico">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
-	<!-- Template Basic Images End -->
-	
-	<!-- Custom Browsers Color Start -->
 	<meta name="theme-color" content="#000">
-	<!-- Custom Browsers Color End -->
 
-	<link rel="stylesheet" href="css/main.min.css">
+
+	<!-- Environment settings -->
+	<style>
+		@font-face {
+			font-family: roboto-example;
+			font-weight: 400;
+			font-style: normal;
+			src: url(../fonts/RobotoRegular/RobotoRegular.eot);
+			src: url(../fonts/RobotoRegular/RobotoRegular.eot?#iefix) format("embedded-opentype"), url(../fonts/RobotoRegular/RobotoRegular.woff) format("woff"), url(../fonts/RobotoRegular/RobotoRegular.ttf) format("truetype")
+		}
+
+		body,
+		html {
+			padding: 0;
+			margin: 0;
+			color: #fff;
+			font-family: 'roboto';
+		}
+
+		* {
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box
+		}
+
+		.main {
+			background-color: #333;
+			height: 100vh;
+			padding: 30px
+		}
+
+		h1 {
+			margin: 0;
+			padding: 0;
+		}
+
+		strong {
+			margin: 15px;
+			display: block;
+		}
+
+		p {
+			padding: 0;
+			margin: 30px 0;
+			line-height: 1.5;
+		}
+
+	</style>
+
+	<!-- Required styles -->
+	<style>
+
+		::-moz-selection {
+			background: #ff3000;
+			color: #fff;
+		}
+		::selection{
+			background: #ff3000;
+			color: #fff;
+		}
+
+		body[data-hl="1"] p::-moz-selection {
+			background: #f0f;
+			color: white; 
+		}
+		body[data-hl="1"] p::selection {
+			background: #f0f;
+			color: white; 
+		}
+
+		body[data-hl="2"] p::-moz-selection {
+			background: #ff3000;
+			color: white; 
+		}
+		body[data-hl="2"] p::selection {
+			background: #ff3000;
+			color: white; 
+		}
+
+		body[data-hl="3"] p::-moz-selection {
+			background: #0032ff;
+			color: white; 
+		}
+		body[data-hl="3"] p::selection {
+			background: #0032ff;
+			color: white; 
+		}
+
+		body[data-hl="4"] p::-moz-selection {
+			background: #00ff1c;
+			color: white; 
+		}
+		body[data-hl="4"] p::selection {
+			background: #00ff1c;
+			color: white; 
+		}
+		
+	</style>
 
 </head>
 
 <body>
 
-	<!-- Custom HTML -->
-
-	<div class="container">
-
-		<div class="row">
-
-			<div class="col-8 offset-2">
-				
-				<img class="img-responsive"
-					src="img/@1x/preview.jpg"
-					srcset="img/@1x/preview.jpg 1x, img/@2x/preview.jpg 2x"
-					alt="Start HTML5 Template">
-
-				<br>
-
-				<h2>Welcome to startup HTML template OptimizedHTML 4!</h2>
-
-				<p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipisicing elit. Ad distinctio animi, dolorum eaque praesentium unde aliquid, mollitia itaque voluptate quos modi et incidunt tempora fugiat voluptatum quia esse dolor repellat.</p>
-				<p>Nemo velit incidunt assumenda, eaque, sequi vitae facilis doloribus qui totam, fuga iure dignissimos ab non praesentium. Vitae similique, corrupti aliquam nam modi explicabo distinctio qui cum officia ullam quam!</p>
-				<p>Aperiam veritatis debitis quibusdam animi totam quos mollitia aspernatur porro consectetur id quod tempore numquam, ullam ex quae quasi voluptatem incidunt placeat asperiores quas autem! Labore modi quae nulla illo!</p>
-
-				<br>
-
-				<div class="row">
-
-					<div class="col-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quo vero molestias, esse doloribus corrupti, nemo minus ullam tempore tenetur magni aut quos soluta sit adipisci eius expedita amet non.</div>
-					<div class="col-6">Odit enim harum minus nam excepturi quae vitae consectetur repudiandae natus neque ab asperiores repellat quo dicta vel accusamus voluptatum rerum autem eaque rem laudantium, sint veritatis. Minus, unde rem.</div>
-
-				</div>
-
-				<br>
-
-			</div>
+	<main class="main">
 			
+		<div class="container">
+
+			<h1>Upwork Test</h1>
+
+			<strong>Below is the &lt;p&gt; tag so the selection works</strong>
+
+			<p class="selected">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, magnam repudiandae et ad quibusdam facere ex sapiente laboriosam soluta doloremque ab quaerat. Quisquam itaque voluptatibus velit numquam deserunt accusantium, nobis obcaecati doloremque perferendis libero ut vitae tempore commodi ab quae laboriosam temporibus in reiciendis. Quasi, magni. Nam perferendis pariatur cupiditate nemo quae non aspernatur, laboriosam officiis explicabo labore, porro illo voluptate optio! Eligendi quos placeat delectus, officiis quasi fuga amet quaerat laborum deleniti ipsam suscipit, excepturi vero esse. Possimus nostrum sed nisi ipsam laudantium animi eligendi ea commodi dolores delectus, quisquam incidunt, rem soluta recusandae dolor, optio voluptatibus? Fuga, porro!</p>
+			<p class="selected">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, magnam repudiandae et ad quibusdam facere ex sapiente laboriosam soluta doloremque ab quaerat. Quisquam itaque voluptatibus velit numquam deserunt accusantium, nobis obcaecati doloremque perferendis libero ut vitae tempore commodi ab quae laboriosam temporibus in reiciendis. Quasi, magni. Nam perferendis pariatur cupiditate nemo quae non aspernatur, laboriosam officiis explicabo labore, porro illo voluptate optio! Eligendi quos placeat delectus, officiis quasi fuga amet quaerat laborum deleniti ipsam suscipit, excepturi vero esse. Possimus nostrum sed nisi ipsam laudantium animi eligendi ea commodi dolores delectus, quisquam incidunt, rem soluta recusandae dolor, optio voluptatibus? Fuga, porro!</p>
+
+			<strong>Below is not a &lt;p&gt; tag so highlighting doesn't work</strong>
+
+			<div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi ab excepturi doloremque ratione, sunt illum odio doloribus magnam debitis possimus.</div>
+
 		</div>
 
-	</div>
+	</main>
 
-	<script src="js/scripts.min.js"></script>
+	<script>
+		
+		function randomInteger(min, max) {
+
+			value = Math.floor(min + Math.random() * (max - min + 1));
+			
+			var now = document.body.getAttribute('data-hl') || 0;
+			
+			if (value == now) {			
+				value = randomInteger(min, max, now);
+			}
+
+			return value;
+		}
+
+		function handlerMouseup(e) {
+		
+			if (!document.getSelection)
+				return false;
+
+			var str = document.getSelection();
+
+			if(str == "")
+				return false;
+			
+			var numbers = 4;
+
+			var body = document.body;
+			var num = randomInteger(1, numbers);			
+						
+			body.setAttribute('data-hl', num);
+
+			return true;
+		}
+
+		var p = document.querySelectorAll('p');
+
+		p.forEach((element) => {
+			element.onmouseup  = handlerMouseup;
+		})
+
+	</script>
 
 </body>
 </html>
